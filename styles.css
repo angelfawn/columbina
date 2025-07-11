@@ -116,5 +116,8 @@ h1 {
 }
 
 .music-button:hover {
+  text-shadow: 0 0 6px #edc5dd, 0 0 12px #edc5dd;
+  transform: translateX(-50%) scale(1.05);
+
   background: rgba(237, 197, 221, 0.4);
 }
