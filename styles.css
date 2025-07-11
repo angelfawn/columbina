@@ -11,6 +11,7 @@ body {
   align-items: center;
   text-transform: lowercase;
   overflow: hidden;
+  cursor: none;
 }
 
 .fade-in {
@@ -49,13 +50,6 @@ h1 {
   align-items: center;
   min-width: 80px;
   padding: 10px;
-}
-
-.glass {
-  background: rgba(237, 197, 221, 0.1);
-  backdrop-filter: blur(5px);
-  border-radius: 12px;
-  padding: 10px 20px;
 }
 
 .count {
@@ -106,18 +100,27 @@ h1 {
   left: 50%;
   transform: translateX(-50%);
   font-size: 36px;
-  background: rgba(237, 197, 221, 0.2);
+  background: none;
   color: #edc5dd;
   border: none;
-  border-radius: 20px;
   cursor: pointer;
-  padding: 6px 14px;
-  transition: background 0.3s ease;
+  padding: 4px;
 }
 
-.music-button:hover {
-  text-shadow: 0 0 6px #edc5dd, 0 0 12px #edc5dd;
-  transform: translateX(-50%) scale(1.05);
+.sparkle {
+  position: fixed;
+  width: 6px;
+  height: 6px;
+  background: white;
+  border-radius: 50%;
+  pointer-events: none;
+  opacity: 0.8;
+  animation: sparkleFade 0.8s linear forwards;
+}
 
-  background: rgba(237, 197, 221, 0.4);
+@keyframes sparkleFade {
+  to {
+    transform: translateY(-10px) scale(0.5);
+    opacity: 0;
+  }
 }

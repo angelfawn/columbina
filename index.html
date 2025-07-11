@@ -62,5 +62,28 @@
       isPlaying = !isPlaying;
     }
   </script>
+  <script>
+    const themeSong = document.getElementById('themeSong');
+    let isPlaying = false;
+
+    function toggleMusic() {
+      if (isPlaying) {
+        themeSong.pause();
+      } else {
+        themeSong.play();
+      }
+      isPlaying = !isPlaying;
+    }
+
+    // sparkle trail logic
+    document.addEventListener('mousemove', (e) => {
+      const sparkle = document.createElement('div');
+      sparkle.className = 'sparkle';
+      sparkle.style.left = e.clientX + 'px';
+      sparkle.style.top = e.clientY + 'px';
+      document.body.appendChild(sparkle);
+      setTimeout(() => sparkle.remove(), 800);
+    });
+  </script>
 </body>
 </html>
