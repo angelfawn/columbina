@@ -1,26 +1,85 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: 'Quicksand', sans-serif;
   color: white;
   background: url('your-gif.gif') no-repeat center center fixed;
   background-size: cover;
-  text-transform: lowercase;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: lowercase;
+  overflow: hidden;
+}
+
+.fade-in {
+  animation: fadeIn 1.2s ease forwards;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
 }
 
 .countdown-container {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
   text-align: center;
-  font-size: 28px;
+  position: relative;
+  max-width: 90vw;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  letter-spacing: 0.5px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
+.countdown-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+  padding: 10px;
+}
+
+.glass {
+  background: rgba(237, 197, 221, 0.1);
+  backdrop-filter: blur(5px);
+  border-radius: 12px;
+  padding: 10px 20px;
+}
+
+.count {
+  font-size: 48px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.label {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.separator {
+  font-size: 40px;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
 }
 
 .release-date {
   font-size: 14px;
-  margin-top: 20px;
+  margin-top: 10px;
   line-height: 1.4;
 }
 
@@ -43,12 +102,19 @@ body {
 
 .music-button {
   position: absolute;
-  top: -40px;
+  top: -50px;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 26px;
-  background: transparent;
+  font-size: 36px;
+  background: rgba(237, 197, 221, 0.2);
   color: #edc5dd;
   border: none;
+  border-radius: 20px;
   cursor: pointer;
+  padding: 6px 14px;
+  transition: background 0.3s ease;
+}
+
+.music-button:hover {
+  background: rgba(237, 197, 221, 0.4);
 }

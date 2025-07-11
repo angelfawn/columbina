@@ -3,13 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <title>columbina countdown</title>
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="countdown-container">
+  <div class="countdown-container fade-in">
     <button class="music-button" onclick="toggleMusic()">𝄞𝄢</button>
     <h1>⋆.˚ expected columbina release date</h1>
-    <div id="countdown"></div>
+    <div id="countdown">
+      <div class="countdown-segment glass">
+        <div class="count" id="days">00</div>
+        <div class="label">days</div>
+      </div>
+      <div class="separator">|</div>
+      <div class="countdown-segment glass">
+        <div class="count" id="hours">00</div>
+        <div class="label">hours</div>
+      </div>
+      <div class="separator">|</div>
+      <div class="countdown-segment glass">
+        <div class="count" id="minutes">00</div>
+        <div class="label">minutes</div>
+      </div>
+      <div class="separator">|</div>
+      <div class="countdown-segment glass">
+        <div class="count" id="seconds">00</div>
+        <div class="label">seconds</div>
+      </div>
+    </div>
     <div class="release-date">
       ────୨ৎ────<br>
       01/14/26<br>
