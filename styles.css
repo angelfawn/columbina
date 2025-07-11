@@ -118,3 +118,19 @@ h1 {
 .music-button.pulsing {
   box-shadow: 0 0 8px #edc5dd, 0 0 14px #edc5dd;
 }
+
+
+.music-button {
+  display: inline-block;
+  font-size: 36px;
+  margin-bottom: 12px;
+  background: none;
+  border: none;
+  color: #edc5dd !important;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+}
+
+.music-button.pulsing {
+  box-shadow: 0 0 8px #edc5dd, 0 0 16px #edc5dd;
+}
