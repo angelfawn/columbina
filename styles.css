@@ -19,15 +19,15 @@ body {
 }
 
 h1 {
-  font-size: 20px;
-  margin-bottom: 20px;
+  font-size: 27px;
+  margin-bottom: 27px;
 }
 
 #countdown {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 30px;
+  gap: 40.5px;
   flex-wrap: nowrap;
 }
 
@@ -35,44 +35,44 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 80px;
+  min-width: 108px;
 }
 
 .count {
-  font-size: 50px;
+  font-size: 67.5px;
   font-weight: bold;
   line-height: 1;
 }
 
 .label {
-  font-size: 16px;
-  margin-top: 5px;
+  font-size: 21.6px;
+  margin-top: 6.75px;
 }
 
 .separator {
-  font-size: 50px;
+  font-size: 67.5px;
   line-height: 1;
-  margin: 0 10px;
+  margin: 0 13.5px;
   display: flex;
   align-items: center;
 }
 
 .release-date {
-  margin-top: 15px;
-  font-size: 14px;
+  margin-top: 20.25px;
+  font-size: 18.9px;
   line-height: 1.4;
 }
 
 .note {
-  font-size: 12px;
+  font-size: 16.2px;
   margin-bottom: 8vh;
   text-align: center;
-  opacity: 0.8;
+  color: #edc5dd;
 }
 
 .subnote {
   display: block;
-  font-size: 10px;
-  margin-top: 5px;
+  font-size: 13.5px;
+  margin-top: 6.75px;
   opacity: 0.7;
 }
