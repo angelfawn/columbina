@@ -19,15 +19,15 @@ body {
 }
 
 h1 {
-  font-size: 27px;
-  margin-bottom: 27px;
+  font-size: 20px;
+  margin-bottom: 20px;
 }
 
 #countdown {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 40.5px;
+  gap: 30px;
   flex-wrap: nowrap;
 }
 
@@ -35,44 +35,70 @@ h1 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  min-width: 108px;
+  min-width: 80px;
 }
 
 .count {
-  font-size: 67.5px;
+  font-size: 50px;
   font-weight: bold;
   line-height: 1;
 }
 
 .label {
-  font-size: 21.6px;
-  margin-top: 6.75px;
+  font-size: 16px;
+  margin-top: 5px;
 }
 
 .separator {
-  font-size: 67.5px;
+  font-size: 50px;
   line-height: 1;
-  margin: 0 13.5px;
+  margin: 0 10px;
   display: flex;
   align-items: center;
 }
 
 .release-date {
-  margin-top: 20.25px;
-  font-size: 18.9px;
+  margin-top: 15px;
+  font-size: 14px;
   line-height: 1.4;
 }
 
 .note {
-  font-size: 16.2px;
+  font-size: 12px;
   margin-bottom: 8vh;
   text-align: center;
-  color: #edc5dd;
+  opacity: 0.8;
 }
 
 .subnote {
   display: block;
-  font-size: 13.5px;
-  margin-top: 6.75px;
+  font-size: 10px;
+  margin-top: 5px;
   opacity: 0.7;
+}
+
+.music-button {
+  position: absolute;
+  top: 18%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 32px;
+  background: none;
+  color: #edc5dd;
+  border: none;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.music-button.pulsing {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.15); }
+}
+
+.music-button.pulsing {
+  box-shadow: 0 0 8px #edc5dd, 0 0 15px #edc5dd;
 }
