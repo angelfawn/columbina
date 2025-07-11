@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  color: white;
+  background: url('your-gif.gif') no-repeat center center fixed;
+  background-size: cover;
+  text-transform: lowercase;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.countdown-container {
+  text-align: center;
+  margin-top: 30vh;
+}
+
+h1 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+#countdown {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 30px;
+  flex-wrap: nowrap;
+}
+
+.countdown-segment {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 80px;
+}
+
+.count {
+  font-size: 50px;
+  font-weight: bold;
+  line-height: 1;
+}
+
+.label {
+  font-size: 16px;
+  margin-top: 5px;
+}
+
+.separator {
+  font-size: 50px;
+  line-height: 1;
+  margin: 0 10px;
+  display: flex;
+  align-items: center;
+}
+
+.release-date {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.note {
+  font-size: 12px;
+  margin-bottom: 8vh;
+  text-align: center;
+  opacity: 0.8;
+}
+
+.subnote {
+  display: block;
+  font-size: 10px;
+  margin-top: 5px;
+  opacity: 0.7;
+}
