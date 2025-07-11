@@ -3,31 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <title>columbina countdown</title>
-  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div class="countdown-container fade-in">
-    <button class="music-button" onclick="toggleMusic()">𝄞𝄢</button>
+  <div class="countdown-container">
     <h1>⋆｡°✩ speculated columbina release date</h1>
     <div id="countdown">
       <div class="countdown-segment">
-        <div class="count" id="days">00</div>
+        <div class="count">00</div>
         <div class="label">days</div>
       </div>
       <div class="separator">|</div>
       <div class="countdown-segment">
-        <div class="count" id="hours">00</div>
+        <div class="count">00</div>
         <div class="label">hours</div>
       </div>
       <div class="separator">|</div>
       <div class="countdown-segment">
-        <div class="count" id="minutes">00</div>
+        <div class="count">00</div>
         <div class="label">minutes</div>
       </div>
       <div class="separator">|</div>
       <div class="countdown-segment">
-        <div class="count" id="seconds">00</div>
+        <div class="count">00</div>
         <div class="label">seconds</div>
       </div>
     </div>
@@ -37,22 +35,20 @@
       ────୨ৎ────
     </div>
   </div>
-
   <div class="note">
     ♡ please do keep in mind that these are just my speculations ♡<br>
     <span class="subnote">☆ the website will be updated once there is new official information ☆</span>
   </div>
+  <script src="script.js"></script>
 
+  <button class="music-button" onclick="toggleMusic()">𝄞𝄢</button>
   <audio id="themeSong" loop>
     <source src="theme.mp3" type="audio/mpeg">
     your browser does not support the audio element
   </audio>
-
-  <script src="script.js"></script>
   <script>
     const themeSong = document.getElementById('themeSong');
     let isPlaying = false;
-
     function toggleMusic() {
       if (isPlaying) {
         themeSong.pause();
@@ -61,17 +57,6 @@
       }
       isPlaying = !isPlaying;
     }
-
-    // sparkle trail
-    document.addEventListener('mousemove', (e) => {
-      const sparkle = document.createElement('div');
-      sparkle.className = 'sparkle';
-      sparkle.style.left = e.clientX + 'px';
-      sparkle.style.top = e.clientY + 'px';
-      document.body.appendChild(sparkle);
-      setTimeout(() => sparkle.remove(), 700);
-    });
   </script>
-<script src="sparkles.js"></script>
 </body>
 </html>
