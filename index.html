@@ -11,22 +11,22 @@
     <button class="music-button" onclick="toggleMusic()">𝄞𝄢</button>
     <h1>⋆｡°✩ speculated columbina release date</h1>
     <div id="countdown">
-      <div class="countdown-segment glass">
+      <div class="countdown-segment">
         <div class="count" id="days">00</div>
         <div class="label">days</div>
       </div>
       <div class="separator">|</div>
-      <div class="countdown-segment glass">
+      <div class="countdown-segment">
         <div class="count" id="hours">00</div>
         <div class="label">hours</div>
       </div>
       <div class="separator">|</div>
-      <div class="countdown-segment glass">
+      <div class="countdown-segment">
         <div class="count" id="minutes">00</div>
         <div class="label">minutes</div>
       </div>
       <div class="separator">|</div>
-      <div class="countdown-segment glass">
+      <div class="countdown-segment">
         <div class="count" id="seconds">00</div>
         <div class="label">seconds</div>
       </div>
@@ -61,29 +61,17 @@
       }
       isPlaying = !isPlaying;
     }
-  </script>
-  <script>
-    const themeSong = document.getElementById('themeSong');
-    let isPlaying = false;
 
-    function toggleMusic() {
-      if (isPlaying) {
-        themeSong.pause();
-      } else {
-        themeSong.play();
-      }
-      isPlaying = !isPlaying;
-    }
-
-    // sparkle trail logic
+    // sparkle trail
     document.addEventListener('mousemove', (e) => {
       const sparkle = document.createElement('div');
       sparkle.className = 'sparkle';
       sparkle.style.left = e.clientX + 'px';
       sparkle.style.top = e.clientY + 'px';
       document.body.appendChild(sparkle);
-      setTimeout(() => sparkle.remove(), 800);
+      setTimeout(() => sparkle.remove(), 700);
     });
   </script>
+<script src="sparkles.js"></script>
 </body>
 </html>

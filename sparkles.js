@@ -1,0 +1,1 @@
+<full sparkle script from user>
