@@ -79,10 +79,10 @@ h1 {
 
 .music-button {
   position: absolute;
-  top: 20px;
+  top: 12%;
   left: 50%;
   transform: translateX(-50%);
-  font-size: 28px;
+  font-size: 32px;
   background: none;
   color: #edc5dd;
   border: none;
