@@ -79,7 +79,7 @@ h1 {
 
 .music-button {
   position: absolute;
-  top: 12%;
+  top: 18%;
   left: 50%;
   transform: translateX(-50%);
   font-size: 32px;
@@ -88,4 +88,17 @@ h1 {
   border: none;
   cursor: pointer;
   z-index: 1000;
+}
+
+.music-button.pulsing {
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: translateX(-50%) scale(1); }
+  50% { transform: translateX(-50%) scale(1.15); }
+}
+
+.music-button.pulsing {
+  box-shadow: 0 0 8px #edc5dd, 0 0 15px #edc5dd;
 }

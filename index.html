@@ -50,10 +50,13 @@
     const themeSong = document.getElementById('themeSong');
     let isPlaying = false;
     function toggleMusic() {
+      const btn = document.querySelector('.music-button');
       if (isPlaying) {
         themeSong.pause();
+      btn.classList.remove('pulsing');
       } else {
         themeSong.play();
+      btn.classList.add('pulsing');
       }
       isPlaying = !isPlaying;
     }
