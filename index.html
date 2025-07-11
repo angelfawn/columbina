@@ -53,10 +53,10 @@
       const btn = document.querySelector('.music-button');
       if (isPlaying) {
         themeSong.pause();
-      btn.classList.remove('pulsing');
+        btn.classList.remove('pulsing');
       } else {
         themeSong.play();
-      btn.classList.add('pulsing');
+        btn.classList.add('pulsing');
       }
       isPlaying = !isPlaying;
     }
